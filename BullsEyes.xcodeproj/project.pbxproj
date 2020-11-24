@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43B73862256DC500001B3341 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B73861256DC500001B3341 /* AboutView.swift */; };
 		43C4744B256C56E6004804FA /* BullsEyesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C4744A256C56E6004804FA /* BullsEyesApp.swift */; };
 		43C4744D256C56E6004804FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C4744C256C56E6004804FA /* ContentView.swift */; };
 		43C4744F256C56E6004804FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43C4744E256C56E6004804FA /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43B73861256DC500001B3341 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		43C47447256C56E6004804FA /* BullsEyes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEyes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C4744A256C56E6004804FA /* BullsEyesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyesApp.swift; sourceTree = "<group>"; };
 		43C4744C256C56E6004804FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				43C4744A256C56E6004804FA /* BullsEyesApp.swift */,
 				43C4744C256C56E6004804FA /* ContentView.swift */,
+				43B73861256DC500001B3341 /* AboutView.swift */,
 				43C4744E256C56E6004804FA /* Assets.xcassets */,
 				43C47453256C56E6004804FA /* Info.plist */,
 				43C47450256C56E6004804FA /* Preview Content */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43C4744D256C56E6004804FA /* ContentView.swift in Sources */,
+				43B73862256DC500001B3341 /* AboutView.swift in Sources */,
 				43C4744B256C56E6004804FA /* BullsEyesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

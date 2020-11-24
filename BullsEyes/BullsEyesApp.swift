@@ -11,7 +11,15 @@ import SwiftUI
 struct BullsEyesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }.navigationViewStyle(StackNavigationViewStyle())
         }
+    }
+}
+
+struct BullsEyesApp_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView().previewLayout(.fixed(width: 896, height: 414))
     }
 }
