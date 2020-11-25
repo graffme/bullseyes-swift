@@ -8,14 +8,38 @@
 import SwiftUI
 
 struct AboutView: View {
-    var body: some View {
-        VStack {
-            Text("🎯 Bulleseye 🎯")
-            Text("This is Bullseye, the game where you can win points and earn fame by whatever.")
-            Text("This is Bullseye, the game where you can win points and earn fame by whatever.")
-            Text("Enjoy")
+    struct HeadingStyle: ViewModifier {
+        func body(content: Content) -> some View {
+            return content
+                .foregroundColor(Color.black)
+                .font(Font.custom("Arial Rounded MT Bold", size: 30))
+                .padding(.vertical, 20)
         }
-        .navigationTitle("About")
+    }
+    
+    struct TextStyle: ViewModifier {
+        func body(content: Content) -> some View {
+            return content
+                .foregroundColor(Color.black)
+                .font(Font.custom("Arial Rounded MT Bold", size: 16))
+                .padding(.leading, 60)
+                .padding(.trailing, 60)
+                .padding(.bottom, 20)
+        }
+    }
+    
+    var body: some View {
+        Group {
+            VStack {
+                Text("🎯 Bulleseye 🎯").modifier(HeadingStyle())
+                Text("This is Bullseye, the game where you can win points and earn fame by whatever.").modifier(TextStyle())
+                Text("This is Bullseye, the game where you can win points and earn fame by whatever.").modifier(TextStyle())
+                Text("Enjoy").modifier(TextStyle())
+            }
+            .background(Color(red: 255.0 / 255.0, green: 214.0 / 255.0, blue: 179.0 / 255.0))
+            .navigationTitle("About")
+        }
+        .background(Image("Background"), alignment: .center)
     }
 }
 
